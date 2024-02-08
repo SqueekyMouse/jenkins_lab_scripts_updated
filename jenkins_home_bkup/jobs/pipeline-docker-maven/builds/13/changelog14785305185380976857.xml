@@ -1,0 +1,10 @@
+commit 03fda2b03b4a5f459d8ae7971bd18a5258bdf289
+tree 6ce7065d5d20d5e5da21a618a3073e8fae27354a
+parent 26d51bf1cffee545112d80baaae0e7a5fa8513ab
+author bob <bob@example.com> 2023-08-23 21:30:07 +0530
+committer bob <bob@example.com> 2023-08-23 21:30:07 +0530
+
+    Add code to remove docker image after push
+
+
+:100755 100755 7215e6350ba1471c9fbeb00ca1ec77a3cc2083cb d191291810a7b788188b16e8e20850aa7ae39468 M	jenkins/push/push.sh

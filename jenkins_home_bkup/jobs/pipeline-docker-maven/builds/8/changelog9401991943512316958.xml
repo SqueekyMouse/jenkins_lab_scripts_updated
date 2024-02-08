@@ -1,0 +1,10 @@
+commit b3b62c105adc798cdc78792f8786e8c824e9e8f3
+tree b5264cb7c933584c2d748d60fe9f9a6b6345b856
+parent 0d8605b430405b97c1a7a23129a60878f8ab63f2
+author bob <bob@example.com> 2023-08-23 20:12:34 +0530
+committer bob <bob@example.com> 2023-08-23 20:12:34 +0530
+
+    Fixed deploy script to create maven folder
+
+
+:100755 100755 ce1340f7ab6512f86cd6126500cfcf76a550da79 9dbd7bb030d0d9f7ad41bdc1613b937fcd32e4a0 M	jenkins/deploy/deploy.sh

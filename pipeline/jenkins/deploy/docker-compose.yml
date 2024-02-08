@@ -1,0 +1,5 @@
+version: '3'
+services:
+  maven:
+    image: "sqmouse/$IMAGE:$TAG"
+    container_name: maven-app

@@ -1,0 +1,10 @@
+commit f685d1569323c686c0cd26da011523cee39a6d1b
+tree b18caf499bc0478380a1550b46c34d7e1f8bb232
+parent 6874e912a6c90860b0d0f51abc0eb4906c902133
+author bob <bob@example.com> 2023-08-23 19:09:14 +0530
+committer bob <bob@example.com> 2023-08-23 19:09:14 +0530
+
+    Fixed path errors in Jenkinsfile
+
+
+:100644 100644 9454875f2849b7fd6ac51949ed3ae0e6eb677719 301328ffc299d898ccdee9fc814fc95562562d2e M	Jenkinsfile

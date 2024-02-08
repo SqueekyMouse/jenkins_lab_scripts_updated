@@ -1,0 +1,78 @@
+version: '3'
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/docker
+    build:
+      context: pipeline
+    ports:
+      - '8080:8080'
+    volumes:
+      - $PWD/jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    # restart: unless-stopped
+    networks:
+      - net
+  remote_host:
+    container_name: remote-host
+    image: remote-host
+    build:
+      context: centos7
+    networks:
+      - net
+    volumes:
+      - $PWD/scripts/aws_db_bkup.sh:/tmp/script.sh
+  db_host:
+    container_name: db
+    image: mysql:5.7
+    environment:
+      - "MYSQL_ROOT_PASSWORD=1234"
+    volumes:
+      - $PWD/db_data:/var/lib/mysql
+    networks:
+      - net
+  web:
+    container_name: web
+    image: ansible-web
+    build:
+      context: jenkins-ansible/web_nginx
+    ports:
+      - "80:80"
+    networks:
+      - net
+    volumes:
+      - $PWD/jenkins-ansible/web_nginx/www/:/var/www/html/
+  php:
+    container_name: php
+    image: php-fpm-alpine
+    build:
+      context: jenkins-ansible/web-php-fpm
+    volumes:
+      - $PWD/jenkins-ansible/web_nginx/www/:/var/www/html/
+    networks:
+      - net
+  git:
+    container_name: git-server
+    image: 'gitlab/gitlab-ee:latest'
+    hostname: 'gitlab.example.com'
+    ports:
+      - '8090:80'
+    volumes:
+      - '$PWD/gitlab-home/config:/etc/gitlab'
+      - '$PWD/gitlab-home/logs:/var/log/gitlab'
+      - '$PWD/gitlab-home/data:/var/opt/gitlab'
+    networks:
+      - net
+    # profiles:
+    #   - donotstart
+  prod_host:
+    container_name: prod-host
+    image: prod-host
+    build:
+      context: prod_host
+    networks:
+      - net
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+networks:
+  net:

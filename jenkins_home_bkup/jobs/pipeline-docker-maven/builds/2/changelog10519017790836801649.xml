@@ -1,0 +1,51 @@
+commit 6874e912a6c90860b0d0f51abc0eb4906c902133
+tree 635aa0ce06eba9271c54ffb93cc2368ebd698762
+parent 5e2d3dceb0b308652180af81465daadb011d896e
+author bob <bob@example.com> 2023-08-22 11:01:16 +0530
+committer bob <bob@example.com> 2023-08-22 11:01:16 +0530
+
+    Adds post action to Jenkinsfile
+
+
+:100644 100644 acee2155c80475218133f54a38be39c4fae58634 9454875f2849b7fd6ac51949ed3ae0e6eb677719 M	Jenkinsfile
+commit 5e2d3dceb0b308652180af81465daadb011d896e
+tree 7ea6513fe1ddec2210c3cf1da64b0d6f596903e5
+parent 27a452696822ca18f43f252e104b01c2db55de14
+author bob <bob@example.com> 2023-08-21 21:28:45 +0530
+committer bob <bob@example.com> 2023-08-21 21:28:45 +0530
+
+    Fixed push script
+
+
+:100755 100755 87f51ee25d55dc786b19e73bde32b3ae7efdf496 5ee83f29d402b3c7e713a9a917d46383d7d6d5df M	jenkins/deploy/deploy.sh
+commit 27a452696822ca18f43f252e104b01c2db55de14
+tree a473ae217766e556ef78690842f2d3c4ec0e6b2d
+parent ef82bc37d5e4df7b0d8235e8f5cdcef75eb7f905
+author bob <bob@example.com> 2023-08-21 21:21:03 +0530
+committer bob <bob@example.com> 2023-08-21 21:21:03 +0530
+
+    Fixed push script
+
+
+:100755 100755 0be0706d5a409450685cd64bebe0699c8a03eae1 87f51ee25d55dc786b19e73bde32b3ae7efdf496 M	jenkins/deploy/deploy.sh
+commit ef82bc37d5e4df7b0d8235e8f5cdcef75eb7f905
+tree 1bcb6361cb4c6c711bacb3bf95932241947fa4fb
+parent 8ba662d437f98e16648ad9d20b9e2b1b5333cccb
+author bob <bob@example.com> 2023-08-21 21:17:08 +0530
+committer bob <bob@example.com> 2023-08-21 21:17:08 +0530
+
+    Added credentials to Jenkinsfile
+
+
+:100644 100644 ef578fe64716dd0ffa04d8b9aeb4ac23dd55931f acee2155c80475218133f54a38be39c4fae58634 M	Jenkinsfile
+commit 8ba662d437f98e16648ad9d20b9e2b1b5333cccb
+tree f2dbfd942c04cdc42ed31bf24951a93bbb8d7195
+parent 8892f77fa0cb8937ed4ee72c39781b4fb5212ef5
+author bob <bob@example.com> 2023-08-21 21:12:48 +0530
+committer bob <bob@example.com> 2023-08-21 21:12:48 +0530
+
+    Update workspace path for job execution in jenkins
+
+
+:100755 100755 985995639b82d0b7fed1b8a1c14470eaace9116f 26027768c794373eadd3df631fa68688811f5a4e M	jenkins/build/maven.sh
+:100755 100755 4ca0e84d9e7fc38dd65d1dbffbe694efb0fec02a dd496254d16751ff5427a4981481b0f659aa0230 M	jenkins/test/maven.sh

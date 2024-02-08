@@ -1,0 +1,10 @@
+commit 26d51bf1cffee545112d80baaae0e7a5fa8513ab
+tree aee38d2e08764adce15172fc58b293dc8302292d
+parent d94175d7d6c01870bce5bdc9a3dc70243315114e
+author bob <bob@example.com> 2023-08-23 21:13:10 +0530
+committer bob <bob@example.com> 2023-08-23 21:13:10 +0530
+
+    Fix comment in deploy script
+
+
+:100755 100755 9dbd7bb030d0d9f7ad41bdc1613b937fcd32e4a0 09ea0ee46e548c6afb7bcab4f9b0a4d07af9d46d M	jenkins/deploy/deploy.sh

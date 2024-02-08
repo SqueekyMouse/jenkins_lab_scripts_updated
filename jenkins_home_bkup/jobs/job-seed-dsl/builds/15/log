@@ -1,0 +1,30 @@
+Started by user [8mha:////4OQpkm9GznLQtMc9UHmfqUSS1teK2/kcanuYsElBmLkQAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/job-seed-dsl
+The recommended git tool is: NONE
+using credential git_user
+Cloning the remote Git repository
+Cloning repository http://gitlab.example.com:80/jenkins/dsl-jobs.git
+ > git init /var/jenkins_home/workspace/job-seed-dsl # timeout=10
+Fetching upstream changes from http://gitlab.example.com:80/jenkins/dsl-jobs.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials GitLab user login for maven repo
+ > git fetch --tags --force --progress -- http://gitlab.example.com:80/jenkins/dsl-jobs.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://gitlab.example.com:80/jenkins/dsl-jobs.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision a1f8a26d4bf867fd5df875278ff125734b561b14 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a1f8a26d4bf867fd5df875278ff125734b561b14 # timeout=10
+Commit message: "Added git-test job"
+First time build. Skipping changelog.
+Processing DSL script jobs
+Added items:
+    GeneratedJob{name='git_dsl_test'}
+Existing items:
+    GeneratedJob{name='ansible-users-db-dsl'}
+    GeneratedJob{name='job_dsl_example'}
+    GeneratedJob{name='maven_dsl'}
+Finished: SUCCESS

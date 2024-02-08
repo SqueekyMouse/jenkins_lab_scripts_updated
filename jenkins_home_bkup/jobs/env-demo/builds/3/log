@@ -1,0 +1,15 @@
+Started by user [8mha:////4OQpkm9GznLQtMc9UHmfqUSS1teK2/kcanuYsElBmLkQAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/env-demo
+[env-demo] $ /bin/sh -xe /tmp/jenkins10377335697634038619.sh
++ echo build ID is 3
+build ID is 3
++ echo current build number 3
+current build number 3
++ echo build url is http://jenkins.local:8080/job/env-demo/3/
+build url is http://jenkins.local:8080/job/env-demo/3/
++ echo jenkins course is: Udemy_01
+jenkins course is: Udemy_01
++ echo jenkins country is: India
+jenkins country is: India
+Finished: SUCCESS

@@ -1,0 +1,10 @@
+commit d94175d7d6c01870bce5bdc9a3dc70243315114e
+tree b78716f77d3813dc6988faa94ea0b1d3b34f09a8
+parent b3b62c105adc798cdc78792f8786e8c824e9e8f3
+author bob <bob@example.com> 2023-08-23 20:30:24 +0530
+committer bob <bob@example.com> 2023-08-23 20:30:24 +0530
+
+    Fixed java typo in prod dockerfile
+
+
+:100644 100644 f31ac5ad27908a7442507fe901b40e0da2266de2 05fb60fb571f64f463ad0837f10a898f15df07e3 M	jenkins/build/Dockerfile-Java
